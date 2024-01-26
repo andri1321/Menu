@@ -10,14 +10,20 @@ final GoRouter router = GoRouter(
   initialLocation: '/login',
   
   routes: [
-     GoRoute(path: '/home',     builder: (context, state) => HomeScreen(),
+      
+      GoRoute( path: '/login', builder: (context, state) => LoginScreen(),
+      routes: [
+        GoRoute(path: 'home',     builder: (context, state) => HomeScreen(),
      routes: [
        GoRoute( path: 'loteria', builder: (context, state) => const Loteria()),
        GoRoute( path: 'contador', builder: (context, state) => const Contador()),
      ]),
-       
-     GoRoute( path: '/login', builder: (context, state) => const LoginScreen()),
+      ]
+      ),  
+
+
      
+       
      
      
   ]
