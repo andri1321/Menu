@@ -14,22 +14,9 @@ import 'package:menu/lista/menuitemlist.dart';
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Menu Principal', style: TextStyle( color: Colors.white),),
-        elevation: 8,
-        flexibleSpace: 
-        Container(
-          decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 83, 0, 151), 
-            boxShadow: [
-          BoxShadow(
-            color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5), 
-            spreadRadius: 1,
-            blurRadius: 5,
-            offset: const Offset(0, 1),
-        ),
-            ]
-          ),
-          ),
+        title: const Text('Menú'),
+        elevation: 80,
+       
         ),
       body: CuerpoB(
         child: Padding(
@@ -72,7 +59,7 @@ class CuerpoB extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
     decoration: const BoxDecoration(
-      color: Color.fromRGBO(46, 2, 87, 1)
+      color: Color.fromRGBO(255, 230, 230, 1)
     ),
     child: child
     );
@@ -114,15 +101,14 @@ class GestureButtom extends StatelessWidget {
         width: 170,
         height: 170,
         decoration: BoxDecoration(
-          color: const Color.fromARGB(96, 95, 0, 247),
             borderRadius: BorderRadius.circular(20),
-           
+           border: Border.all(width: 1)
            ),
         child: Center(
           child: Column(
             children: [
               icon,
-              Text( text, style: const TextStyle( fontSize: 20, color: Colors.white)),
+              Text( text, style: const TextStyle( fontSize: 20, color: Color.fromARGB(255, 0, 0, 0))),
             ]    
           ),
         ),

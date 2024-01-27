@@ -23,11 +23,6 @@ class _ContadorState extends State<Contador> {
         backgroundColor: Colors.indigo,
       ),
 
-      drawer: const Drawer(
-        backgroundColor: Color.fromARGB(255, 213, 220, 221),
-       
-      ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
